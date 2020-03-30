@@ -18,7 +18,7 @@ namespace dotnet_core
         {
             Console.WriteLine(text);
             //берем строкку подключения из App.config
-            string connectionString = ConfigurationManager.ConnectionStrings["ConnectToDB"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["RemoteConnectToDB"].ConnectionString;
             //соединяемся с базой sql
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
