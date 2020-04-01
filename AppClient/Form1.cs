@@ -28,14 +28,21 @@ namespace AppClient
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = Repo.Parse();
-        }
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonDownloadFromDB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonParse_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Repo.Parse();
         }
     }
 }

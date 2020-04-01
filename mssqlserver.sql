@@ -17,31 +17,70 @@ USE [BOOKSTORAGE];
 CREATE TABLE [Categories]
 (
 	[id] INT IDENTITY PRIMARY KEY,
-	[name] VARCHAR(25),
+	[name] NVARCHAR(200),
 );
 
-USE [BOOKSTORAGE];
+CREATE TABLE [Authors]
+(
+	[id] INT IDENTITY PRIMARY KEY,
+	[name] NVARCHAR(200),
+);
+
 CREATE TABLE [Books]
 (
 	[id] INT IDENTITY PRIMARY KEY,
-	[name] VARCHAR(25),
-	[pages] INT,
-	[year_press] INT,
+	[name] NVARCHAR(200),
+	[price] MONEY,
+	[author_id] INT REFERENCES [Authors]([id]),
 	[category_id] INT REFERENCES [Categories]([id])
 );
 
+
+DROP DATABASE [BOOKSTORAGE];
+CREATE DATABASE [BOOKSTORAGE_TEST];
+DROP DATABASE [BOOKSTORAGE_TEST];
 USE [BOOKSTORAGE];
-INSERT INTO [dbo].[Categories] ([name]) 
-VALUES 
-('mystic'),
-('postApocalypse');
+
 
 USE [BOOKSTORAGE];
-INSERT INTO [dbo].[Books] ([name], [pages], [year_press], [category_id]) 
+
+INSERT INTO [dbo].[Authors] ([name]) 
+VALUES
+(N'Рэй Брэдбери'),
+(N'Стивен Кинг'),
+(N'Айзек Азимов')
+
+INSERT INTO [dbo].[Categories] ([name]) 
+VALUES
+(N'фантастика'),
+(N'классика'),
+(N'бизнес'),
+(N'роман'),
+(N'фэнтези'),
+(N'психология'),
+(N'изотерика'),
+(N'мистика'),
+(N'ужасы')
+
+INSERT INTO [dbo].[Books] ([name], [price], [author_id], [category_id]) 
 VALUES 
-('book1', 200, 2020, 1),
-('book2', 250, 2019, 1),
-('book3', 150, 2015, 2);
+(N'541 градус по Фаренгейту', 900.50, (SELECT [id] FROM [Authors] WHERE [name] = N'Рэй Брэдбери'), (SELECT [id] FROM [Categories] WHERE [name] = N'фантастика')),
+(N'Вино из одуванчиков', 850, (SELECT [id] FROM [Authors] WHERE [name] = N'Рэй Брэдбери'), (SELECT [id] FROM [Categories] WHERE [name] = N'фантастика')),
+(N'Тёмный карнавал', 700, (SELECT [id] FROM [Authors] WHERE [name] = N'Рэй Брэдбери'), (SELECT [id] FROM [Categories] WHERE [name] = N'фантастика')),
+(N'Оно', 550, (SELECT [id] FROM [Authors] WHERE [name] = N'Стивен Кинг'), (SELECT [id] FROM [Categories] WHERE [name] = N'ужасы')),
+(N'Зеленая миля', 670, (SELECT [id] FROM [Authors] WHERE [name] = N'Стивен Кинг'), (SELECT [id] FROM [Categories] WHERE [name] = N'мистика')),
+(N'11/22/63', 495, (SELECT [id] FROM [Authors] WHERE [name] = N'Стивен Кинг'), (SELECT [id] FROM [Categories] WHERE [name] = N'фантастика')),
+(N'Я, робот', 495, (SELECT [id] FROM [Authors] WHERE [name] = N'Айзек Азимов'), (SELECT [id] FROM [Categories] WHERE [name] = N'фантастика')),
+(N'Основание', 495, (SELECT [id] FROM [Authors] WHERE [name] = N'Айзек Азимов'), (SELECT [id] FROM [Categories] WHERE [name] = N'роман')),
+(N'Конец вечности', 495, (SELECT [id] FROM [Authors] WHERE [name] = N'Айзек Азимов'), (SELECT [id] FROM [Categories] WHERE [name] = N'фантастика'))
+
+
+USE [BOOKSTORAGE];
+DROP TABLE [Books]; 
+
+DROP TABLE [Categories]; 
+
+
 
 USE [BOOKSTORAGE];
 CREATE PROCEDURE [dbo].[sp_getXML]

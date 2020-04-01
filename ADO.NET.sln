@@ -5,10 +5,6 @@ VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppClient", "AppClient\AppClient.csproj", "{8B2E9E99-DB38-4A53-846B-FC9A87439D9C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet core", "dotnet core\dotnet core.csproj", "{EC2F34AC-B087-4DF0-A0BC-DAFAEC2DF0CE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ado.net-core", "ado.net-core\ado.net-core.csproj", "{0EFF0B45-034E-4130-95C9-B31CBE0ADDCB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ado.netDomain", "ado.netDomain\ado.netDomain.csproj", "{876D292E-42F3-4ADE-9D19-3B9BB2CBA9F5}"
 EndProject
 Global
@@ -21,14 +17,6 @@ Global
 		{8B2E9E99-DB38-4A53-846B-FC9A87439D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B2E9E99-DB38-4A53-846B-FC9A87439D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B2E9E99-DB38-4A53-846B-FC9A87439D9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC2F34AC-B087-4DF0-A0BC-DAFAEC2DF0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC2F34AC-B087-4DF0-A0BC-DAFAEC2DF0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC2F34AC-B087-4DF0-A0BC-DAFAEC2DF0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC2F34AC-B087-4DF0-A0BC-DAFAEC2DF0CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EFF0B45-034E-4130-95C9-B31CBE0ADDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EFF0B45-034E-4130-95C9-B31CBE0ADDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EFF0B45-034E-4130-95C9-B31CBE0ADDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EFF0B45-034E-4130-95C9-B31CBE0ADDCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{876D292E-42F3-4ADE-9D19-3B9BB2CBA9F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{876D292E-42F3-4ADE-9D19-3B9BB2CBA9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876D292E-42F3-4ADE-9D19-3B9BB2CBA9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
