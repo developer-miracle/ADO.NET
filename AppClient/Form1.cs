@@ -37,12 +37,17 @@ namespace AppClient
 
         private void buttonDownloadFromDB_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = Repo.DownloadDataFromDB();
         }
 
         private void buttonParse_Click(object sender, EventArgs e)
         {
             textBox1.Text = Repo.Parse();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

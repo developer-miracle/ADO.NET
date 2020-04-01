@@ -37,9 +37,9 @@
             // 
             // buttonParse
             // 
-            this.buttonParse.Location = new System.Drawing.Point(931, 249);
+            this.buttonParse.Location = new System.Drawing.Point(828, 249);
             this.buttonParse.Name = "buttonParse";
-            this.buttonParse.Size = new System.Drawing.Size(107, 64);
+            this.buttonParse.Size = new System.Drawing.Size(107, 69);
             this.buttonParse.TabIndex = 0;
             this.buttonParse.Text = "Parse";
             this.buttonParse.UseVisualStyleBackColor = true;
@@ -47,12 +47,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(751, 12);
+            this.textBox1.Location = new System.Drawing.Point(125, 249);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(287, 231);
+            this.textBox1.Size = new System.Drawing.Size(697, 69);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -60,7 +60,7 @@
             // 
             this.buttonDownloadFromDB.Location = new System.Drawing.Point(12, 249);
             this.buttonDownloadFromDB.Name = "buttonDownloadFromDB";
-            this.buttonDownloadFromDB.Size = new System.Drawing.Size(107, 64);
+            this.buttonDownloadFromDB.Size = new System.Drawing.Size(107, 69);
             this.buttonDownloadFromDB.TabIndex = 2;
             this.buttonDownloadFromDB.Text = "Download";
             this.buttonDownloadFromDB.UseVisualStyleBackColor = true;
@@ -71,14 +71,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(630, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(923, 231);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 326);
+            this.ClientSize = new System.Drawing.Size(949, 326);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonDownloadFromDB);
             this.Controls.Add(this.textBox1);
