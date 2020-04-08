@@ -37,7 +37,7 @@
             // 
             // buttonParse
             // 
-            this.buttonParse.Location = new System.Drawing.Point(828, 249);
+            this.buttonParse.Location = new System.Drawing.Point(469, 12);
             this.buttonParse.Name = "buttonParse";
             this.buttonParse.Size = new System.Drawing.Size(107, 69);
             this.buttonParse.TabIndex = 0;
@@ -47,18 +47,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 249);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(697, 69);
+            this.textBox1.Size = new System.Drawing.Size(451, 69);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buttonDownloadFromDB
             // 
-            this.buttonDownloadFromDB.Location = new System.Drawing.Point(12, 249);
+            this.buttonDownloadFromDB.Location = new System.Drawing.Point(582, 12);
             this.buttonDownloadFromDB.Name = "buttonDownloadFromDB";
             this.buttonDownloadFromDB.Size = new System.Drawing.Size(107, 69);
             this.buttonDownloadFromDB.TabIndex = 2;
@@ -69,9 +69,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(923, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(677, 231);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 326);
+            this.ClientSize = new System.Drawing.Size(698, 326);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonDownloadFromDB);
             this.Controls.Add(this.textBox1);
